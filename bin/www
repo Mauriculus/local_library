@@ -18,7 +18,7 @@ app.set('port', port);
 // Set up mongoose connection
 const mongoose = require("mongoose");
 
-const mongoDB = "mongodb+srv://Mauriculus2:gV0Nvbg3iIEm939Y@cluster0.bmhkimy.mongodb.net/?appName=Cluster0";
+const mongoDB = require("../.env")
 
 async function connectMongoose() {
   await mongoose.connect(mongoDB);
